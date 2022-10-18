@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    height: 510px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.card img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 45px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .4), 
+    0 15px 100px rgba(0, 0, 0, .3);
+}
+
+.card h3 {
+    margin: 15px 0 10px 0;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.card h3:hover {
+    transform: scale(1.1);
+}
+
+.card h3::after {
+    content: 'Chhin Hua';
+}
+.card h3:hover::after {
+    content: 'Chau Chhin Hua';
+}
+
+.card .post {
+    color: #fff;
+}
+.card .post::after{
+    content:'Student';
+}
+.card .post:hover::after{
+    transform: scale(1.3);
+    content:'Student of University of Technology and Education HCM City';
+}
+
+.card .map-pin {
+    margin-top: 15px;
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    justify-content: center;
+}
+
+.card .map-pin a {
+    color: #fff;
+}
+.card .map-pin svg:hover {
+    transform: scale(1.4);
+}
+
+.card .icons{
+    margin: 25px 0;
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    justify-content: center;
+}
+.card .icons a{
+    margin: 0 5px;
+    font-size: 25px;
+    color: #fff;
+}
+.card .icons a:hover {
+    transform: scale(1.4);
+}
+
+.card button {
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    outline: none;
+    margin: 0 2px;
+    cursor: pointer;
+    height: 35px;
+    width: 145px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background: #fff;
+    color: #333;
+    transform: scale(1.05);
+}
+
+.card .shares {
+    margin-top: 25px;
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    justify-content: center;
+}
+
+.card .shares svg {
+    align-items: center;
+    justify-content: center;
+}
+
+.card .shares svg:hover {
+    transform: scale(1.3);
+}
+
+.card .shares .counter{
+    font-size: 20px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.card .shares .counter:nth-child(2){
+    padding: 5px 15px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-top: none;
+}
+
+.card .shares .counter .count{
+    color: #f0f0f0;
+}
